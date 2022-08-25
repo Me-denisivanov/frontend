@@ -42,7 +42,7 @@ const CreateItem: React.FC = () => {
   const formSubmit = async (infoData: FetchCreateProductsArgs) => {
     const data = await dispatch(
       fetchCreateProducts({
-        imageUrl: `http://localhost:6050${createImage}`,
+        imageUrl: `${process.env.REACT_APP_API_URL}${createImage}`,
         ...infoData,
       })
     )
@@ -88,7 +88,7 @@ const CreateItem: React.FC = () => {
               src={
                 !createImage
                   ? "https://cdn-icons-png.flaticon.com/512/25/25333.png"
-                  : `http://localhost:6050${createImage}`
+                  : `${process.env.REACT_APP_API_URL}${createImage}`
               }
               alt="Товар"
             />

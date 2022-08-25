@@ -61,7 +61,7 @@ const EditUserPage: React.FC = () => {
         fullName: inputTextValue,
         avatarUrl: !userNewImg
           ? userItem.avatarUrl
-          : `http://localhost:6050${userNewImg}`,
+          : `${process.env.REACT_APP_API_URL}${userNewImg}`,
       })
 
       await dispatch(fetchUserMe())
@@ -89,7 +89,7 @@ const EditUserPage: React.FC = () => {
           src={
             !userNewImg
               ? userItem.avatarUrl
-              : `http://localhost:6050${userNewImg}`
+              : `${process.env.REACT_APP_API_URL}${userNewImg}`
           }
         />
         <div className="button_remove">

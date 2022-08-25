@@ -7,7 +7,7 @@ import localStorageService from "./localStorage.service"
 type LogInType = Record<string, string>
 
 const httpAuth = axios.create({
-  baseURL: "http://localhost:6050/api/auth",
+  baseURL: process.env.REACT_APP_API_URL,
 })
 
 const authService = {

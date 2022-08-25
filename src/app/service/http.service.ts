@@ -3,7 +3,7 @@ import authService from "./auth.service"
 import localStorageService from "./localStorage.service"
 
 const http = axios.create({
-  baseURL: "http://localhost:6050/api/",
+  baseURL: process.env.REACT_APP_API_URL,
 })
 
 http.interceptors.request.use(

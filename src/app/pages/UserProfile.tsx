@@ -59,7 +59,7 @@ const UserProfile: React.FC = () => {
           src={
             !userNewImg
               ? userItem.avatarUrl
-              : `http://localhost:6050${userNewImg}`
+              : `${process.env.REACT_APP_API_URL}${userNewImg}`
           }
         />
 
