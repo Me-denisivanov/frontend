@@ -142,60 +142,6 @@ const authSlice = createSlice({
         state.data = null
         state.status = "error"
       })
-
-    // [fetchUserData.pending]: (state) => {
-    //   state.data = null
-    //   state.status = "loading"
-    // },
-    // [fetchUserData.fulfilled]: (state, action) => {
-    //   state.data = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchUserData.rejected]: (state) => {
-    //   state.data = null
-    //   state.status = "error"
-    // },
-
-    // Register
-    // [fetchRegister.pending]: (state) => {
-    //   state.data = null
-    //   state.status = "loading"
-    // },
-    // [fetchRegister.fulfilled]: (state, action) => {
-    //   state.data = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchRegister.rejected]: (state, action) => {
-    //   state.data = null
-    //   state.status = "error"
-    // },
-
-    // Auth ME USER
-    // [fetchUserMe.pending]: (state) => {
-    //   state.data = null
-    //   state.status = "loading"
-    // },
-    // [fetchUserMe.fulfilled]: (state, action) => {
-    //   state.data = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchUserMe.rejected]: (state, action) => {
-    //   state.data = null
-    //   state.status = "error"
-    // },
-    // //ORDER
-    // [fetchAllOrders.pending]: (state) => {
-    //   state.purchases = null
-    //   state.status = "loading"
-    // },
-    // [fetchAllOrders.fulfilled]: (state, action) => {
-    //   state.data.buy = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchAllOrders.rejected]: (state) => {
-    //   state.purchases = null
-    //   state.status = "error"
-    // },
   },
 })
 

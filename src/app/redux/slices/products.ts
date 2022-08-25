@@ -168,52 +168,6 @@ const productsSlice = createSlice({
         state.items = state.items.filter((item) => item._id !== action.payload)
         state.status = "loaded"
       })
-
-    // [fetchProducts.pending]: (state) => {
-    //   state.items = []
-    //   state.status = "loading"
-    // },
-    // [fetchProducts.fulfilled]: (state, action) => {
-    //   state.items = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchProducts.rejected]: (state) => {
-    //   state.items = []
-    //   state.status = "loading"
-    // },
-
-    //Create Item
-    // [fetchCreateProducts.pending]: (state) => {
-    //   state.items = []
-    //   state.status = "loading"
-    // },
-    // [fetchCreateProducts.fulfilled]: (state, action) => {
-    //   state.items.push(action.payload)
-    //   state.status = "loaded"
-    // },
-    // [fetchCreateProducts.rejected]: (state) => {
-    // state.items = []
-    // state.status = "loading"
-    // },
-
-    //Create Image
-    // [fetchUploadImageCreate.pending]: (state) => {
-    //   state.items = []
-    //   state.status = "loading"
-    // },
-    // [fetchUploadImageCreate.fulfilled]: (state, action) => {
-    //   state.imageCreate = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchUploadImageCreate.rejected]: (state) => {
-    //   state.items = []
-    //   state.status = "loading"
-    // },
-
-    // [fetchRemoveProduct.pending]: (state, action) => {
-    //   console.log(action)
-    //   state.items = state.items.filter((item) => item._id !== action.meta.arg)
-    // },
   },
 })
 
