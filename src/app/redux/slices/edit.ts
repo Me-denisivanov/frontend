@@ -96,34 +96,6 @@ const editSlice = createSlice({
       .addCase(fetchUploadFile.rejected, (state) => {
         state.status = "error"
       })
-
-    // [fetchUserProfile.pending]: (state) => {
-    //   state.data = null
-    //   state.status = "loading"
-    // },
-    // [fetchUserProfile.fulfilled]: (state, action) => {
-    //   state.editProfileAll.fullName = action.payload.fullName
-    //   state.editProfileAll.avatarUrl = action.payload.avatarUrl
-    //   state.status = "loaded"
-    // },
-    // [fetchUserProfile.rejected]: (state) => {
-    //   state.data = null
-    //   state.status = "error"
-    // },
-
-    // UPLOAD IMAGE
-    // [fetchUploadFile.pending]: (state) => {
-    //   state.data = null
-    //   state.status = "loading"
-    // },
-    // [fetchUploadFile.fulfilled]: (state, action) => {
-    //   state.newAvatarUrl = action.payload
-    //   state.status = "loaded"
-    // },
-    // [fetchUploadFile.rejected]: (state) => {
-    //   state.data = null
-    //   state.status = "error"
-    // },
   },
 })
 

@@ -144,7 +144,6 @@ const authSlice = createSlice({
   },
 })
 
-//Selector
 export const userAuthData = (state: RootState) => state.auth.data
 export const selectIsAuth = (state: RootState) => Boolean(state.auth.data)
 
