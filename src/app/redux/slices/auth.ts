@@ -115,7 +115,6 @@ const authSlice = createSlice({
         state.status = "error"
       })
 
-      // Register
       .addCase(fetchRegister.pending, (state) => {
         state.data = null
         state.status = "loading"
