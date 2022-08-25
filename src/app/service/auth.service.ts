@@ -2,7 +2,6 @@ import { AboutUserType } from "./../redux/slices/auth"
 import axios from "axios"
 import { httpService } from "./http.service"
 import localStorageService from "./localStorage.service"
-// import { AllInfoUser } from "../redux/slices/edit"
 
 type LogInType = Record<string, string>
 
