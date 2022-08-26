@@ -102,7 +102,7 @@ const Header: React.FC = () => {
                 <Tooltip title="Подробнее">
                   <IconButton
                     onClick={handleOpenUserMenu}
-                    sx={{ p: 0, mr: "20px" }}
+                    sx={{ p: 0, mr: "12px" }}
                   >
                     <Avatar alt="Remy Sharp" src={isAuthData?.avatarUrl} />
                   </IconButton>
@@ -131,43 +131,75 @@ const Header: React.FC = () => {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                <MenuItem onClick={handleCloseUserMenu}>
-                  <Button>
-                    <Link
-                      sx={{ textDecoration: "none", width: "100%" }}
-                      component={RouterLink}
-                      to={`/profile/${id}`}
-                    >
-                      Профиль
-                    </Link>
-                  </Button>
+                <MenuItem
+                  onClick={handleCloseUserMenu}
+                  sx={{ padding: 0, margin: 0 }}
+                >
+                  <Link
+                    sx={{
+                      textDecoration: "none",
+                      width: "100%",
+                      textAlign: "center",
+                      padding: "12px",
+                    }}
+                    component={RouterLink}
+                    to={`/profile/${id}`}
+                  >
+                    Профиль
+                  </Link>
                 </MenuItem>
 
-                <MenuItem onClick={handleCloseUserMenu}>
-                  <Button>
-                    <Link
-                      sx={{ textDecoration: "none", width: "100%" }}
-                      component={RouterLink}
-                      to="/purchases"
-                    >
-                      Мои покупки
-                    </Link>
-                  </Button>
+                <MenuItem
+                  onClick={handleCloseUserMenu}
+                  sx={{ padding: 0, margin: 0 }}
+                >
+                  <Link
+                    sx={{
+                      textDecoration: "none",
+                      width: "100%",
+                      textAlign: "center",
+                      padding: "12px",
+                    }}
+                    component={RouterLink}
+                    to="/purchases"
+                  >
+                    Мои покупки
+                  </Link>
                 </MenuItem>
 
-                <MenuItem onClick={handleCloseUserMenu}>
-                  <Button>
-                    <Link
-                      sx={{ textDecoration: "none", width: "100%" }}
-                      component={RouterLink}
-                      to="/create"
-                    >
-                      Добавить товар
-                    </Link>
-                  </Button>
+                <MenuItem
+                  onClick={handleCloseUserMenu}
+                  sx={{ padding: 0, margin: 0 }}
+                >
+                  <Link
+                    sx={{
+                      textDecoration: "none",
+                      width: "100%",
+                      textAlign: "center",
+                      padding: "12px",
+                    }}
+                    component={RouterLink}
+                    to="/create"
+                  >
+                    Добавить товар
+                  </Link>
                 </MenuItem>
-                <MenuItem onClick={handleCloseUserMenu}>
-                  <Button onClick={handleExit}>Выход</Button>
+
+                <MenuItem
+                  onClick={handleCloseUserMenu}
+                  sx={{ padding: 0, margin: 0 }}
+                >
+                  <Link
+                    onClick={handleExit}
+                    sx={{
+                      textDecoration: "none",
+                      width: "100%",
+                      textAlign: "center",
+                      padding: "12px",
+                    }}
+                  >
+                    Выход
+                  </Link>
                 </MenuItem>
               </Menu>
             </Box>
