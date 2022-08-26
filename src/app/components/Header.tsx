@@ -134,7 +134,7 @@ const Header: React.FC = () => {
                 <MenuItem onClick={handleCloseUserMenu}>
                   <Button>
                     <Link
-                      sx={{ textDecoration: "none" }}
+                      sx={{ textDecoration: "none", width: "100%" }}
                       component={RouterLink}
                       to={`/profile/${id}`}
                     >
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
                 <MenuItem onClick={handleCloseUserMenu}>
                   <Button>
                     <Link
-                      sx={{ textDecoration: "none" }}
+                      sx={{ textDecoration: "none", width: "100%" }}
                       component={RouterLink}
                       to="/purchases"
                     >
@@ -158,7 +158,7 @@ const Header: React.FC = () => {
                 <MenuItem onClick={handleCloseUserMenu}>
                   <Button>
                     <Link
-                      sx={{ textDecoration: "none" }}
+                      sx={{ textDecoration: "none", width: "100%" }}
                       component={RouterLink}
                       to="/create"
                     >
