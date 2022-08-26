@@ -7,10 +7,14 @@ const Purchases: React.FC = () => {
   const myPurchases = useAppSelector(userAuthData)
   return (
     <>
-      {myPurchases &&
+      {!myPurchases ? (
+        <h1>Вы не совершали покупок</h1>
+      ) : (
+        myPurchases &&
         myPurchases.buy.map((item, idx: number) => (
           <AllUserItems key={idx} {...item} />
-        ))}
+        ))
+      )}
     </>
   )
 }
